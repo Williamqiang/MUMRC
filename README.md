@@ -14,7 +14,7 @@ Code for the ICME 2023 paper "[A Unified MRC Framework with Multi-Query for Mult
 
 # Requirements
 
-To run the codes (**Python 3.8**), you need to install the requirements:
+
 ```
 conda create -n mumrc python==3.7
 conda activate mumrc
