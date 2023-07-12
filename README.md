@@ -5,11 +5,11 @@ Code for the ICME 2023 paper "[A Unified MRC Framework with Multi-Query for Mult
 # Model Architecture
 
 <div align=center>
-<img src="resource/model.png" width="75%" height="75%" />
+<img src="model.png" width="75%" height="75%" />
 </div>
  
  
- Illustration of MKGformer for (a) Unified Multimodal KGC Framework and (b) Detailed M-Encoder.
+ Illustration of MUMRC.
 
 
 # Requirements
