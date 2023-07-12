@@ -25,9 +25,10 @@ pip install transformers==4.18.0
 
 # Data Download
 
-    The  dataset comes from [MEGA](https://github.com/thecharm/Mega), many thanks.
 
- and [MKGformer](https://github.com/zjunlp/MKGformer).
+    The  dataset comes from [MEGA](https://github.com/thecharm/Mega) and [MKGformer](https://github.com/zjunlp/MKGformer), many thanks.
+
+
 The expected structure of files is:
 
 
