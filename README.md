@@ -1,9 +1,6 @@
-# MKGFormer
+# MUMRC
 
-Code for the SIGIR 2022 paper "[Hybrid Transformer with Multi-level Fusion for Multimodal Knowledge Graph Completion](https://arxiv.org/pdf/2205.02357.pdf)"
-
-- ❗NOTE: We provide some KGE baselines at [OpenBG-IMG](https://github.com/OpenBGBenchmark/OpenBG-IMG).
-- ❗NOTE: We release a new MKG task "[Multimodal Analogical Reasoning over Knowledge Graphs](https://arxiv.org/abs/2210.00312) (ICLR'2023)" at [MKG_Analogy](https://zjunlp.github.io/project/MKG_Analogy/).
+Code for the ICME 2023 paper "[A Unified MRC Framework with Multi-Query for Multi-modal Relation Triplets Extraction]"
 
 # Model Architecture
 
