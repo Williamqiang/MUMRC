@@ -22,26 +22,12 @@ conda install pytorch==1.7.0 torchvision==0.8.0 torchaudio==0.7.0 cudatoolkit=11
 pip install transformers==4.18.0
 ```
 
-Data Preprocess
-==========
-To extract visual object images int MNER and MRE tasks, we first use the NLTK parser to extract noun phrases from the text and apply the [visual grouding toolkit](https://github.com/zyang-ur/onestage_grounding) to detect objects. Detailed steps are as follows:
-
-1. Using the NLTK parser (or Spacy, textblob) to extract noun phrases from the text.
-2. Applying the [visual grouding toolkit](https://github.com/zyang-ur/onestage_grounding) to detect objects. Taking the twitter2017 dataset as an example, the extracted objects are stored in `twitter2017_aux_images`. The images of the object obey the following naming format: `id_pred_yolo_crop_num.png`, where `id` is the order of the raw image corresponding to the object, `num` is the number of the object predicted by the toolkit. (`id` is doesn't matter.)
-3. Establishing the correspondence between the raw images and the objects. We construct a dictionary to record the correspondence between the raw images and the objects. Taking `twitter2017/twitter2017_train_dict.pth` as an example, the format of the dictionary can be seen as follows: `{imgname:['id_pred_yolo_crop_num0.png', 'id_pred_yolo_crop_num1.png', ...] }`, where key is the name of raw images, value is a List of the objects (Note that in `train/val/test.txt`, text and raw image have a one-to-one relationship, so the `imgnae` can be used as a unique identifier for the raw images).
-
-The detected objects and the dictionary of the correspondence between the raw images and the objects are available in our data links.
 
 # Data Download
 
-The datasets that we used in our experiments are as follows:
+The dataset that we used in our experiments is as follows:
 
 
-+ Twitter2017
-    
-    You can download the twitter2017 dataset from [Google Drive](https://drive.google.com/file/d/1ogfbn-XEYtk9GpUECq1-IwzINnhKGJqy/view?usp=sharing).
-
-    For more information regarding the dataset, please refer to the [UMT](https://github.com/jefferyYu/UMT/) repository.
 
 + MRE
     
@@ -55,19 +41,6 @@ The datasets that we used in our experiments are as follows:
     tar -xzvf data.tar.gz
     ```
 
-+ MKG
-
-    + FB15K-237-IMG
-
-        You can download the image data of FB15k-237 from [mmkb](https://github.com/mniepert/mmkb) which provides a list of image URLs, and refer to more information of description of entity from [kg-bert](https://github.com/yao8839836/kg-bert) repositories.
-        
-       - **❗NOTE: we have found a severe bug in the code of data preprocessing for FB15k-237-IMG, which leads to the unfair performance comparison; we have updated the performance in [arxiv](https://arxiv.org/pdf/2205.02357.pdf) and released the [checkpoints](https://drive.google.com/drive/folders/1NsLA7mXaVnhlYNvzRDWIcBxq2CpKF_6m) (The model trained with/without the severe bug).**
-
-    + WN18-IMG
-
-        Entity images in WN18 can be obtained from ImageNet, the specific steps can refer to RSME. the [RSME](https://github.com/wangmengsd/RSME) repository.
-
-We also provide additional network disk links for **multimodal KG data (Images) at [GoogleDrive](https://drive.google.com/file/d/197c4fCLVC6F7sCBqZIDwm5tjWeGJnZ5-/view?usp=share_link) or [Baidu Pan](https://pan.baidu.com/s/1TVArQSLmPjr2FsC8NkSiOA) with extraction (code:ilbd)**.
 
 The expected structure of files is:
 
@@ -119,30 +92,6 @@ MKGFormer
 
 # How to run
 
-
-+ ## MKG Task
-
-    - First run Image-text Incorporated Entity Modeling to train entity embedding.
-
-    ```shell
-        cd MKG
-        bash scripts/pretrain_fb15k-237-image.sh
-    ```
-
-    - Then do Missing Entity Prediction.
-
-
-    ```shell
-        bash scripts/fb15k-237-image.sh
-    ```
-
-+ ## MNER Task
-
-    To run mner task, run this script.
-
-    ```shell
-    cd MNER
-    bash run_mner.sh
     ```
 
 + ## MRE Task
