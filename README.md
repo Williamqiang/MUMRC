@@ -1,6 +1,6 @@
 # MUMRC
 
-Code for the ICME 2023 paper "[A Unified MRC Framework with Multi-Query for Multi-modal Relation Triplets Extraction]"
+Code for the ICME 2023 paper "A Unified MRC Framework with Multi-Query for Multi-modal Relation Triplets Extraction"
 
 # Model Architecture
 
