@@ -127,5 +127,5 @@ The code is based on [PURE](https://github.com/princeton-nlp/PURE), many thanks.
 If you use or extend our work, please cite the paper as follows:
 
 ```bibtex
-dwadwa dadwd
+Waiting...
 ```
