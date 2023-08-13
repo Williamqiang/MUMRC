@@ -90,28 +90,6 @@ The expected structure of files is:
 │   │   ├── myvisual.py
 │   │   └── question_template.py
 │   └── train.sh
-├── MUMRC_RoBERTa
-│   ├── entity
-│   │   ├── dataloader.py
-│   │   ├── models.py
-│   │   └── utils.py
-│   ├── output
-│   │   └── 2024
-│   ├── relation
-│   │   ├── dataloader.py
-│   │   ├── __init__.py
-│   │   ├── models.py
-│   │   └── utils.py
-│   ├── run_entity.py
-│   ├── run_relation.py
-│   ├── shared
-│   │   ├── ClipViT.py
-│   │   ├── const.py
-│   │   ├── data_structures.py
-│   │   ├── loadimg.py
-│   │   ├── myvisual.py
-│   │   └── question_template.py
-│   └── train.sh
 └── requirements.txt
 ```
 
