@@ -1,0 +1,7 @@
+[Start Convert]
+line 278:24: [UnConvert] 'aten::randn' didn't convert.
+line 319:23: [UnConvert] 'aten::bmm' didn't convert.
+line 322:23: [UnConvert] 'aten::bmm' didn't convert.
+line 372:26: [UnConvert] 'aten::sigmoid' didn't convert.
+[Convert Over]
+Converted Rate: 92.73%.
