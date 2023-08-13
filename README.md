@@ -22,7 +22,7 @@ conda install pytorch==1.7.0 torchvision==0.8.0 torchaudio==0.7.0 cudatoolkit=11
 pip install transformers==4.18.0
 ```
 For MindSpore, please follow this [URL](https://www.mindspore.cn/install).
-The version is 2.0.0 and the device is GPU CUDA 11.6
+The MindSpore's version is 2.0.0 and the device is GPU CUDA 11.6
 
 
 # Data Download
